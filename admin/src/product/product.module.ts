@@ -13,9 +13,7 @@ import { ProductService } from './product.service';
         name: 'PRODUCT_SERVICE',
         transport: Transport.RMQ,
         options: {
-          urls: [
-            'amqps://iazosnux:5qmCFfTX21sjDh4ZISz-FABCLW06Blpb@jaguar.rmq.cloudamqp.com/iazosnux',
-          ],
+          urls: ['RABBIT'],
           queue: 'main_queue',
           queueOptions: {
             durable: false,

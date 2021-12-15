@@ -7,9 +7,7 @@ async function bootstrap() {
   const microservice = app.connectMicroservice({
     transport: Transport.RMQ,
     options: {
-      urls: [
-        'amqps://iazosnux:5qmCFfTX21sjDh4ZISz-FABCLW06Blpb@jaguar.rmq.cloudamqp.com/iazosnux',
-      ],
+      urls: ['RABBITMQ'],
       queue: 'main_queue',
       queueOptions: {
         durable: false,
